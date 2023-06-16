@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            position: absolute;
+        }
+        #btn1{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <button id="btn1">click</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("#btn1").animate({
+                    width: "200px",
+                    height: "200px"
+                },{
+                    duration: 1000,
+                    easing: "linear",
+                    complete:function(){
+                        $(this).after(
+                            "<p>reache to maxmimun height</p>"
+                        )
+                    }
+                })
+                
+            })
+            
+        })
+    </script>
+</body>
+</html>

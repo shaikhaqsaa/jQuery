@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <style>
+        #flip{
+            padding:5px ;
+            text-align: center;
+            background-color: darkcyan;
+            border: 1px solid;
+        }
+        #panel{
+            display: none;
+             padding: 50px;
+             border: 1px solid;
+             text-align: center;
+             background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="flip">click to slide down</div>
+    <div id="panel">hello world!!</div>
+
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideDown("slow")
+                
+            })
+            
+        })
+    </script>
+</html>

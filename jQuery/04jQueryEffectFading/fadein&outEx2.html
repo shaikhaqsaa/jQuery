@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h2>
+        jQuery | Fade Out() method
+    </h2>
+    <button class="btn1">fade Out</button>
+    <button class="btn2">Fade In</button>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("h2").fadeOut(1000, function () {
+                    alert("fadeOut() method is finish")
+                    
+                });
+                 
+                
+            });
+            $("btn2").click(function () {
+                $(".btn2").click(function () {
+                    $("h2").fadeIn(2000, function () {
+                        alert("fade In() method is finish")
+                        
+                    });
+                    
+                })
+                
+            })
+        })
+    </script>
+    
+</body>
+</html>

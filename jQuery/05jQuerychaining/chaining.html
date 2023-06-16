@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">chaining method</p>
+    <button >click</button>
+    <script src="
+    https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#para").css("color","blue").animate({
+                    width: '100%'
+                }).animate({
+                    fontSize: '46px'
+                }).animate({
+                    fontSize: '26px'
+                });
+                
+            });
+            
+        });
+    </script>
+</body>
+</html>
