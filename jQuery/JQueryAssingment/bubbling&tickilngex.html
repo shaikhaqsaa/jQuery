@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          p {
+            line-height: 0;
+        }
+
+        div {
+            display: inline-block;
+            padding: 5px;
+
+            background: #e91414;
+            border: 1px solid #d51212;
+            cursor: pointer;
+        }
+
+        div:hover {
+            border: 1px solid #faa;
+            background: #fdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" id="div1">1
+        <div class="div2" id="div2">2
+            <div class="div3" id="div3">3
+                <div class="div4" id="div4">4
+                    <div class="div5" id="div5">5</div>
+                    </div>
+                    </div>
+                    </div>
+    </div>
+    <button id="clear">CLEAR OUTPUT</button>
+    <section id="log"></section>
+
+    <script>
+        var divs = document.getElementsByTagName('div');
+        .console.log(divs);
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].addEventListener('click',function event() {
+                alert("you clicked" +this.id);
+                
+            },false);
+            
+        }
+    </script>
+</body>
+</html>

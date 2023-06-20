@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #flip{
+            height: 100px;
+            padding:5px ;
+            align-items: center;
+            background-color: rgb(237, 21, 21);
+            border: 1px solid;
+        }
+        #panel{
+            height: 80px;
+            padding:5px ;
+            align-items: center;
+            background-color: rgb(38, 191, 24);
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="flip">jQuery Slider</div>
+    <div id="panel">hello guys!!!</div>
+    <script>
+        $("document").ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow")
+                
+            })
+            
+        });
+
+    </script>
+</body>
+</html>
