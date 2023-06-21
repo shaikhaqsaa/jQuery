@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="jquery-validation-1.19.5/lib/jquery.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.js"></script>\
+    <script>
+        $.validator.setDefaults({
+            submitHandler: function () {
+                alert("submitted")
+            }
+        });
+        $.ready(function () {
+            $("#commentform").validate();
+            
+        })
+    </script>
+</head>
+<body>
+    <form class="cmxform" id="commentform" method="get" action="">
+        <fieldset>
+            <p>
+            <label for="cname">Name(required)</label>
+            <input id="cname" name="name" minlength="2" type="text" required></p>
+<p>
+            <label for="cemail">Email(required)</label>
+            <input id="cemail" name="email" type="email" required></p>
+<p>
+            <label for="curl">URL</label>
+            <input id="curl" name="url" type="url" required></p>
+<p>
+            <label for="ccoment">Comment</label>
+            <textarea id="ccoment" name="comment" required></textarea></p>
+            <p>
+                <input type="submit" id="submit" name="submit" value="submit">
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
